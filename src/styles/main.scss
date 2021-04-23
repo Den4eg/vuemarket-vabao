@@ -1,0 +1,96 @@
+@font-face {
+  src: url('./assets/fonts/ProximaNova-Black.woff');
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  src: url('./assets/fonts/ProximaNova-Bold.woff');
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('./assets/fonts/ProximaNova-Semibold.woff');
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url('./assets/fonts/ProximaNova-Regular.woff');
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('./assets/fonts/IstokWeb-Bold.woff');
+  font-family: 'Istok';
+  font-style: normal;
+  font-weight: 700;
+}
+:root {
+  --main-blue:rgb(56, 120, 244);
+  --main-bg-gray:rgb(252, 252, 252);
+}
+// $main-blue: rgb(56, 120, 244);
+// $blue-light6: rgba(56, 120, 244, 0.4);
+// $blue-support: rgba(56, 120, 244, 0.4);
+// $blue-light--thin: rgb(219, 230, 251);
+// $purpple-accent-1: rgba(235, 212, 255, 1);
+// $purpple-accent-2: rgba(190, 130, 255, 1);
+// $purpple-accent-3: rgba(175, 85, 245, 1);
+// $green-dirty: rgba(61, 95, 6, 0.7);
+
+// $main-text: rgb(50, 50, 50);
+// $text-light6: rgba(50, 50, 50, 0.6);
+// $text-light7: rgba(50, 50, 50, 0.7);
+// $text-light8: rgba(50, 50, 50, 0.8);
+// $text-placeholder: rgba(142, 142, 142, 1);
+// $text-purpple1: rgba(169, 70, 246, 1);
+
+// $footer-background: rgba(230, 236, 243, 1);
+
+* {
+  font-family: 'Proxima';
+  color: rgb(50, 50, 50);
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.reset {
+  margin: 0;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .container {
+    margin: 0 100px !important;
+  }
+
+  .left {
+    .description-sell {
+      left: 6.5vw !important;
+    }
+  }
+
+  .right {
+    .description-sell {
+      right: 6.5vw !important;
+    }
+  }
+}
