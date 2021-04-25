@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import vkIcon from "./vkIcon";
-import facebookIcon from "./facebookIcon";
-import instaIcon from "./instaIcon";
-import painterestIcon from "./painterestIcon";
+import vkIcon from './vkIcon'
+import facebookIcon from './facebookIcon'
+import instaIcon from './instaIcon'
+import painterestIcon from './painterestIcon'
 export default {
   components: {
     vkIcon,
@@ -32,7 +32,7 @@ export default {
   props: {
     iconName: {
       type: String,
-      default: ""
+      default: ''
     },
     width: {
       type: [Number, String],
@@ -44,10 +44,10 @@ export default {
     },
     iconColor: {
       type: String,
-      default: "currentColor"
+      default: 'currentColor'
     }
   }
-};
+}
 </script>
 
 <style scoped>

@@ -46,18 +46,17 @@
       </div>
     </div>
     <div class="footer-bottom flex align-center">
-      <div class="all-rights">
-        2020 © Все права защищены
-      </div>
-      <div v-for="icon in foterIcons" :key="icon" class="socials">
-        <icon-base :iconName="icon" />
+      <div class="all-rights">2020 © Все права защищены</div>
+      <div class="socials">
+        <icon-base :iconName="icon" v-for="icon of footerIcons" :key="icon" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import iconBase from '../components/iconsComponents/iconBase'
+import iconBase from './iconsComponents/iconBase.vue'
+
 export default {
   components: {
     iconBase
@@ -100,7 +99,7 @@ export default {
           data: ''
         }
       ],
-      foterIcons: ['facebook', 'vk', 'insta', 'painterest']
+      footerIcons: ['facebook', 'vk', 'insta', 'painterest']
     }
   }
 }
@@ -155,20 +154,22 @@ export default {
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02rem;
   text-align: left;
 
   .footer-menu__item {
+    white-space: nowrap;
     cursor: pointer;
   }
 
-  .footer-menu__item:not(:last-child) {
+  .footer-menu__item {
     margin-right: 35px;
   }
 }
 
 .footer-contacts {
   list-style: none;
+  white-space: nowrap;
 
   &__title {
     margin-bottom: 10px;

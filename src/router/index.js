@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 // Pages import
-import HomePage from '../views/HomePage.vue'
-import SellPage from '../views/SellPage.vue'
-import BuyPage from '../views/BuyPage.vue'
-import RulesPage from '../views/RulesPage.vue'
-import SearchPage from '../views/SearchPage.vue'
-import InfoPage from '../views/InfoPage.vue'
-import AuthPage from '../views/auth/AuthPage.vue'
-import UserPage from '../views/user/UserPage.vue'
+import HomePage from '../layouts/HomePage.vue'
+import SellPage from '../layouts/SellPage.vue'
+import BuyPage from '../layouts/BuyPage.vue'
+import RulesPage from '../layouts/RulesPage.vue'
+import SearchPage from '../layouts/SearchPage.vue'
+import InfoPage from '../layouts/InfoPage.vue'
+import AuthPage from '../layouts/auth/AuthPage.vue'
+import UserPage from '../layouts/user/UserPage.vue'
 
 const routes = [
   {
@@ -48,9 +48,8 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
-    } else {
-      return { top: 0 }
     }
+    return { top: 0 }
   },
   history: createWebHistory(process.env.BASE_URL),
   routes

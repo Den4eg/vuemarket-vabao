@@ -8,9 +8,8 @@
 import AppHeader from './components/AppHeader'
 import AppFooter from './components/AppFooter'
 
-
 export default {
-  components:{
+  components: {
     AppHeader,
     AppFooter
   }
@@ -18,21 +17,21 @@ export default {
 </script>
 
 <style lang="scss">
-
 @import 'styles/main.scss';
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
 
-  #app {
-    position: relative;
-    background-color: var(--main-bg-gray);
-  }
+#app {
+  position: relative;
+  background-color: var(--main-bg-gray);
+}
 
-  .footer {
-    box-sizing: border-box;
-    margin-top: 429px;
-  }
+// .footer {
+//   box-sizing: border-box;
+//   margin-top: 429px;
+// }
 </style>

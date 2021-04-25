@@ -81,13 +81,13 @@ export default {
     return {
       isAuthenticated: true,
       leftMenuItems: [
-        { title: "О сервисе", link: "/" },
-        { title: "Купить", link: "/buy" },
-        { title: "Продать", link: "/sell" }
+        { title: 'О сервисе', link: '/' },
+        { title: 'Купить', link: '/buy' },
+        { title: 'Продать', link: '/sell' }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">
@@ -96,7 +96,7 @@ export default {
   height: 70px;
   padding: 0 140px;
   justify-content: space-between;
-  font-family: "Proxima";
+  font-family: 'Proxima';
   font-size: 15px;
   font-weight: 600;
   background-color: #fff;
